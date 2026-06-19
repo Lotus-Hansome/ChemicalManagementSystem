@@ -6,11 +6,9 @@ from tkinter import messagebox, ttk
 
 from app.config import DATE_FORMAT
 
-
 AREAS = ["A车间", "A-01 原料罐区", "A-02 溶剂库", "B-01 危化品库", "B-03 固体库", "C罐区", "D环保站", "E动力站"]
 PRIORITIES = ["低", "中", "高"]
 STATUSES = ["待处理", "处理中", "已完成", "已关闭"]
-
 
 class WorkOrderView(ttk.Frame):
     def __init__(self, parent, store, app) -> None:
