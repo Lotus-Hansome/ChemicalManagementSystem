@@ -1,0 +1,186 @@
+{
+  "chemicals": [
+    {
+      "id": "C001",
+      "name": "甲醇",
+      "category": "易燃液体",
+      "storage_area": "A-01 原料罐区",
+      "inventory": 1200.0,
+      "unit": "L",
+      "hazard_level": "高",
+      "cas": "67-56-1",
+      "supplier": "华东化工供应站",
+      "updated_at": "2026-06-18 09:10:00"
+    },
+    {
+      "id": "C002",
+      "name": "氢氧化钠",
+      "category": "碱性腐蚀品",
+      "storage_area": "B-03 固体库",
+      "inventory": 350.0,
+      "unit": "kg",
+      "hazard_level": "中",
+      "cas": "1310-73-2",
+      "supplier": "启明材料有限公司",
+      "updated_at": "2026-06-18 10:05:00"
+    },
+    {
+      "id": "C003",
+      "name": "硫酸",
+      "category": "酸性腐蚀品",
+      "storage_area": "B-01 危化品库",
+      "inventory": 640.0,
+      "unit": "L",
+      "hazard_level": "高",
+      "cas": "7664-93-9",
+      "supplier": "江南试剂厂",
+      "updated_at": "2026-06-18 08:40:00"
+    },
+    {
+      "id": "C004",
+      "name": "乙醇",
+      "category": "易燃液体",
+      "storage_area": "A-02 溶剂库",
+      "inventory": 980.0,
+      "unit": "L",
+      "hazard_level": "中",
+      "cas": "64-17-5",
+      "supplier": "盛海化学品有限公司",
+      "updated_at": "2026-06-17 16:30:00"
+    },
+    {
+      "id": "C005",
+      "name": "丙酮",
+      "category": "易燃液体",
+      "storage_area": "A-02 溶剂库",
+      "inventory": 760.0,
+      "unit": "L",
+      "hazard_level": "高",
+      "cas": "67-64-1",
+      "supplier": "盛海化学品有限公司",
+      "updated_at": "2026-06-17 15:45:00"
+    },
+    {
+      "id": "C006",
+      "name": "液氨",
+      "category": "压缩气体",
+      "storage_area": "C-01 压力容器区",
+      "inventory": 2.8,
+      "unit": "t",
+      "hazard_level": "极高",
+      "cas": "7664-41-7",
+      "supplier": "中安气体集团",
+      "updated_at": "2026-06-18 11:15:00"
+    }
+  ],
+  "parameters": [
+    {
+      "id": "P001",
+      "name": "反应釜温度",
+      "area": "A车间",
+      "value": 76.01,
+      "unit": "℃",
+      "low": 50.0,
+      "high": 85.0,
+      "status": "正常",
+      "acknowledged": false,
+      "updated_at": "2026-06-19 00:52:14"
+    },
+    {
+      "id": "P002",
+      "name": "储罐压力",
+      "area": "C罐区",
+      "value": 0.59,
+      "unit": "MPa",
+      "low": 0.3,
+      "high": 0.8,
+      "status": "正常",
+      "acknowledged": false,
+      "updated_at": "2026-06-19 00:52:14"
+    },
+    {
+      "id": "P003",
+      "name": "VOC浓度",
+      "area": "A车间",
+      "value": 84.56,
+      "unit": "ppm",
+      "low": 0.0,
+      "high": 80.0,
+      "status": "报警",
+      "acknowledged": false,
+      "updated_at": "2026-06-19 00:52:14"
+    },
+    {
+      "id": "P004",
+      "name": "废水pH",
+      "area": "D环保站",
+      "value": 7.54,
+      "unit": "pH",
+      "low": 6.0,
+      "high": 9.0,
+      "status": "正常",
+      "acknowledged": false,
+      "updated_at": "2026-06-19 00:52:14"
+    },
+    {
+      "id": "P005",
+      "name": "冷却水流量",
+      "area": "E动力站",
+      "value": 108.64,
+      "unit": "m³/h",
+      "low": 90.0,
+      "high": 160.0,
+      "status": "正常",
+      "acknowledged": false,
+      "updated_at": "2026-06-19 00:52:14"
+    },
+    {
+      "id": "P006",
+      "name": "液氨储罐液位",
+      "area": "C罐区",
+      "value": 89.64,
+      "unit": "%",
+      "low": 30.0,
+      "high": 85.0,
+      "status": "报警",
+      "acknowledged": false,
+      "updated_at": "2026-06-19 00:52:14"
+    }
+  ],
+  "work_orders": [
+    {
+      "id": "WO20260618001",
+      "title": "液氨储罐高液位复核",
+      "area": "C罐区",
+      "priority": "高",
+      "status": "处理中",
+      "owner": "现场操作员",
+      "created_at": "2026-06-18 10:55:00",
+      "due_date": "2026-06-19",
+      "description": "检查液位计与联锁阀门状态，确认是否需要转移库存。"
+    },
+    {
+      "id": "WO20260617001",
+      "title": "A-02 溶剂库通风巡检",
+      "area": "A-02 溶剂库",
+      "priority": "中",
+      "status": "待处理",
+      "owner": "现场操作员",
+      "created_at": "2026-06-17 14:20:00",
+      "due_date": "2026-06-20",
+      "description": "完成风机、VOC探头和防静电接地检查。"
+    },
+    {
+      "id": "WO20260616001",
+      "title": "废水pH探头标定",
+      "area": "D环保站",
+      "priority": "低",
+      "status": "已完成",
+      "owner": "系统管理员",
+      "created_at": "2026-06-16 09:00:00",
+      "due_date": "2026-06-18",
+      "description": "按月度计划完成pH探头两点标定并记录。"
+    }
+  ],
+  "audit_logs": []
+}

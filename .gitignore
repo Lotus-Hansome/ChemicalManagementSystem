@@ -1,0 +1,9 @@
+.idea/
+.venv/
+__pycache__/
+*.py[cod]
+logs/
+reports/*.csv
+data/*.tmp
+data/*.db
+data/*.db-*
