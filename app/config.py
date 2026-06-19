@@ -7,8 +7,6 @@ DATA_DIR = BASE_DIR / "data"
 DATA_FILE = DATA_DIR / "cms_data.json"
 DB_FILE = DATA_DIR / "cms_data.db"
 REPORT_DIR = BASE_DIR / "reports"
-LOG_DIR = BASE_DIR / "logs"
-LOG_FILE = LOG_DIR / "app.log"
 
 DATE_FORMAT = "%Y-%m-%d"
 DATETIME_FORMAT = "%Y-%m-%d %H:%M:%S"

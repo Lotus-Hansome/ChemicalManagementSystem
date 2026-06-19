@@ -12,7 +12,6 @@ from app.exceptions import (
     PermissionDeniedError,
     handle_exception,
     install_exception_hooks,
-    setup_logging,
 )
 from app.ui.dashboard_view import DashboardView
 from app.ui.data_query_view import DataQueryView
@@ -26,7 +25,6 @@ from app.ui.work_order_view import WorkOrderView
 class ChemicalManagementApp(tk.Tk):
     def __init__(self) -> None:
         super().__init__()
-        setup_logging()
         configure_style(self)
         install_exception_hooks(self)
 
